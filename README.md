@@ -25,9 +25,30 @@ Coming soon:
 
 Installation:
 --------------
+
+**guided**
+
 Step 1:
 -------
-> Install fonts and required packages
+- > clone the repo
+  - ```git clone https://github.com/Viruslullaby/i3 && cd i3```
+    
+Step 2:
+-------
+- > give it executable permissions
+  - ```chmod +x install.sh```
+    
+Step 3:
+-------
+
+- > run the installer
+  - ```/.install.sh```
+---------------
+**manual**
+
+Step 1:
+-------
+- > Install fonts and required packages
    - Void Linux:
      ```
      sudo xbps-install i3 i3status picom kitty feh font-awesome6-6.4.2_1 git
@@ -47,16 +68,16 @@ Step 1:
 
 Step 2:
 -------
-> Clone repo & cd
+- > Clone repo & cd
 
-```git clone https://github.com/Viruslullaby/i3 && cd i3```
+  - ```git clone https://github.com/Viruslullaby/i3 && cd i3```
 
 Step 3:
 -------
-> Move files to directories
+- > Move files to directories
 
-- ```mv i3/config ~/.config/i3/``` 
-- ```mkdir ~/.config/i3status ```
-- ```mv i3status/config ~/.config/i3status/``` 
-- ```mkdir ~/.config/kitty```
-- ```mv kitty/kitty.conf ~/.config/kitty/```
+  - ```mv i3/config ~/.config/i3/``` 
+  - ```mkdir ~/.config/i3status ```
+  - ```mv i3status/config ~/.config/i3status/``` 
+  - ```mkdir ~/.config/kitty```
+  - ```mv kitty/kitty.conf ~/.config/kitty/```
