@@ -3,6 +3,8 @@
 ## https://github.com/Viruslullaby ##
 #####################################
 
+
+## mod4 for windows key as super mod1 for alt as super
 set $mod Mod4
 font pango:monospace 8
 
@@ -62,16 +64,21 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # in progress
-set $ws1 "1  Terminal"
-set $ws2 "2  Code"
-set $ws3 "3  Firefox"
-set $ws4 "4  XMPP"
-set $ws5 "5  Rice"
-set $ws6 "6  QEMU/KVM"
-set $ws7 "7  Files"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
+set $ws1 "1  "
+set $ws2 "2  "
+set $ws3 "3  "
+set $ws4 "4  "
+set $ws5 "5  "
+set $ws6 "6  "
+set $ws7 "7  "
+
+######################
+## Change if needed ##
+######################
+
+#set $ws8 "8"
+#set $ws9 "9"
+#set $ws10 "10"
 
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
@@ -80,9 +87,14 @@ bindsym $mod+4 workspace number $ws4
 bindsym $mod+5 workspace number $ws5
 bindsym $mod+6 workspace number $ws6
 bindsym $mod+7 workspace number $ws7
-bindsym $mod+8 workspace number $ws8
-bindsym $mod+9 workspace number $ws9
-bindsym $mod+0 workspace number $ws10
+
+######################
+## Change if needed ##
+######################
+
+#bindsym $mod+8 workspace number $ws8
+#bindsym $mod+9 workspace number $ws9
+#bindsym $mod+0 workspace number $ws10
 
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
@@ -117,8 +129,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-gaps outer 5
-gaps inner 8
+gaps outer  5
+gaps inner  8
 
 default_border pixel 0
 default_floating_border pixel 0
@@ -129,15 +141,16 @@ exec picom
 
 bar {
         status_command i3status
-	height 30
+	height 20
 	position top
-	font pango:Font Awesome
+	separator_symbol "/"
+	font pango:Font Awesome size 10
 	colors {
-        background #1c3c4a
-        statusline #b0e5f2
+        background #1c3c4a00
+        statusline #b0e5f2 #701014
         separator #1ABC9C
         # colorclass       <border> <background> <text>
-        focused_workspace  #2f5658  #445265     #b0e5f2
-        inactive_workspace #1F2D3A  #1F2D3A     #b0e5f2
+        focused_workspace  #2f5658  #000000     #7ab3db
+        inactive_workspace #1F2D3A  #000000     #7ab3db
         }
 }
